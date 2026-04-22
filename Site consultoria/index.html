@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Berg Junior</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #fff;
+            font-size: 20px;
+        }
+
+/* TÍTULOS */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #22c55e;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* BANNER COM IMAGEM */
+        .banner {
+            text-align: center;
+            padding: 120px 20px;
+            background: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e') no-repeat center/cover;
+            position: relative;
+        }
+
+        .banner::after {
+            content: "";
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            background: #22c55e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* SOBRE COM FOTO */
+        .sobre-container {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .sobre-container img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* CONTAINER */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARD PADRÃO */
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* alinha tudo igual */
+}
+
+/* IMAGEM PADRONIZADA */
+.card img {
+    width: 100%;
+    height: 180px; /* altura fixa */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* TÍTULO */
+.card h3 {
+    margin: 10px 0;
+}
+
+/* TEXTO */
+.card p {
+    flex-grow: 1; /* força ocupar espaço igual */
+}
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            background: #22c55e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        Imagem de Sobre mim
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* FOTO REDONDA SEM FUNDO */
+.sobre-container img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #22c55e; /* opcional (fica premium) */
+}
+
+/* TEXTO */
+.sobre-container p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Consultoria Berg Junior</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<!-- BANNER COM IMAGEM -->
+<div class="banner">
+    <div class="banner-content">
+        <h2>Transforme seu corpo com acompanhamento profissional</h2>
+        <p>TREINOS PERSONALIZADOS | SUPORTE ONLINE | ACOMPANHAMENTO MENSAL</p>
+        <a href="#contato" class="btn">Começar Agora</a>
+    </div>
+</div>
+
+<!-- SOBRE COM FOTO -->
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-container">
+        <img src="img/WhatsApp Image 2026-04-22 at 13.02.48.jpeg" alt="Personal Trainer">
+
+        <p>
+            Sou Personal Trainer especializado em emagrecimento e preparação para o TAF. 
+            Trabalho com um método estratégico e acompanhamento próximo para quem busca 
+            resultado de verdade — seja para perder peso, ganhar condicionamento ou 
+            conquistar a aprovação no teste físico.
+        </p>
+    </div>
+</section>
+
+<!-- SERVIÇOS COM IMAGENS -->
+<section id="servicos">
+    <h2>Serviços</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="img/BERG JUNIOR.jpeg" alt="">
+            <h3>Consultoria Online</h3>
+            <p>Treino personalizado + acompanhamento mensal.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" alt="">
+            <h3>Plano de Treino</h3>
+            <p>Treinos adaptados ao seu objetivo e nível.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="">
+            <h3>Acompanhamento Premium</h3>
+            <p>Suporte diário + ajustes constantes.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+
+   
+    <p>Fale comigo no WhatsApp:</p>
+    <a class="btn" href="https://wa.me/55021993674586">Chamar no WhatsApp</a>
+</section>
+
+<footer>
+    <p>© 2026 - Consultoria Berg Junior</p>
+</footer>
+
+</body>
+</html>
